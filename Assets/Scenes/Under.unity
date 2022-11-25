@@ -338,10 +338,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 438635941, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
-      propertyPath: levelLoadDelay
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 569900400399918820, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -352,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 569900400399918820, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.57
+      value: 1.468
       objectReference: {fileID: 0}
     - target: {fileID: 569900400399918820, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -386,9 +382,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 707982394597100260, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2555580626110461924, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394166434200199658, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
