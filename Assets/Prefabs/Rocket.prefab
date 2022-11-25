@@ -241,5 +241,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
-  crashSound: {fileID: 8300000, guid: df80acf7d2ea74cc58388f17c37c0641, type: 3}
-  finishSound: {fileID: 8300000, guid: 8eb8e121a760f4206bd818d72faf5976, type: 3}
+  success: {fileID: 8300000, guid: 8eb8e121a760f4206bd818d72faf5976, type: 3}
+  crash: {fileID: 8300000, guid: df80acf7d2ea74cc58388f17c37c0641, type: 3}
