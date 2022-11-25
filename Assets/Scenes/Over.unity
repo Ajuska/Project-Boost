@@ -338,6 +338,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 49876488, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: a4acba48d11e244c389c9e0c443d1bfb, type: 3}
+    - target: {fileID: 438635941, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
+      propertyPath: levelLoadDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085454470, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 569900400399918820, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
       propertyPath: m_RootOrder
       value: 3

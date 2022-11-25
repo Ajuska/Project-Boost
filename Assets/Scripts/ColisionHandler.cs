@@ -3,12 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class ColisionHandler : MonoBehaviour
 {
-    [SerializeReference] float levelLoadDelay = 2f;
+    [SerializeReference] float levelLoadDelay = 1f;
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip crash;
+    AudioSource audioSource;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
    private void OnCollisionEnter(Collision other) {
         switch (other.gameObject.tag)
         {
             case "Friendly":
-                Debug.Log("this is frienly");
                 break;
             case "Finish":
                 StartSuccessSequence();
@@ -24,13 +33,15 @@ public class ColisionHandler : MonoBehaviour
 
    void StartSuccessSequence()
    {
+        audioSource.PlayOneShot(success);
+        // TODO add particle effect upon success
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
    }
 
    void StartCrashSequence()
    {
-        // TODO add SFX upon crash
+        audioSource.PlayOneShot(crash);
         // TODO add particle effect upon crash
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
