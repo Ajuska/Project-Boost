@@ -10,15 +10,33 @@ public class ColisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem crashParticles;
     AudioSource audioSource;
     bool isTransitioning = false;
+    bool collisionDisable = false;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
+    // Update is called once per frame
+    void Update()
+    {
+       RespondToDebugKeys();
+    }
+
+    void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKey(KeyCode.C))
+        {
+            collisionDisable = !collisionDisable;
+        }
+    }
 
    private void OnCollisionEnter(Collision other) {
-        if (isTransitioning) {return;}
+        if (isTransitioning || collisionDisable) {return;}
         switch (other.gameObject.tag)
         {
             case "Friendly":
