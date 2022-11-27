@@ -864,25 +864,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7438013833875512847, guid: ea4fe5449df7d4cf88aa7ff5dfb7ea38, type: 3}
   m_PrefabInstance: {fileID: 413021897}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &413021899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5644030408554237852, guid: ea4fe5449df7d4cf88aa7ff5dfb7ea38, type: 3}
-  m_PrefabInstance: {fileID: 413021897}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &413021900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413021899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e08d3b54abcd84985899fe2402e42b4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementVector: {x: 0.2, y: 0.2, z: 0}
-  period: 5
 --- !u!1001 &414742253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1906,10 +1887,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 49876488, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
-      propertyPath: rotationThurst
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 569900400399918820, guid: f22638d7ad1cd4944833367f8d350e34, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4141,8 +4118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08d3b54abcd84985899fe2402e42b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0.2, y: 0.2, z: 0}
-  period: 5
+  movementVector: {x: 0.1, y: 0.1, z: 0}
+  period: 10
 --- !u!4 &1898969662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3600492343325057943, guid: 03b5f3e4b5e174e9594e885cca46396d, type: 3}
