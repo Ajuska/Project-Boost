@@ -29,7 +29,7 @@ public class ColisionHandler : MonoBehaviour
         {
             LoadNextLevel();
         }
-        else if (Input.GetKey(KeyCode.C))
+        else if (Input.GetKeyDown(KeyCode.C))
         {
             collisionDisable = !collisionDisable;
         }
